@@ -140,21 +140,37 @@
 # end
 
 
-100.times do
-	print rand(20..130).chr
-	sleep rand(0.01..0.03)
-end
+# 100.times do
+# 	print rand(20..130).chr
+# 	sleep rand(0.01..0.03)
+# end
 
 
-print "Enter you last name: "
-name = gets.chomp!
+# print "Enter you last name: "
+# name = gets.chomp!
 
-10.times   do
-	name.size.times do |x|
-		print name[x]
-		sleep rand(0.05..0.09)
-		print "-"
+# 10.times   do
+# 	name.size.times do |x|
+# 		print name[x]
+# 		sleep rand(0.05..0.09)
+# 		print "-"
+# 	end
+# 	print "  "
+# end
+
+
+print "Enter the amount to save monthly: "
+	x = gets.to_f
+print "For how many years do you plan to save money? "
+	year = gets.to_i
+
+	s = 0
+	1.upto(year) do |mm|
+		
+		1.upto(12) do |m|
+			s = s+x
+		puts "Savings for Year #{mm} month #{m}: #{s} "
+	
 	end
-	print "  "
-end
+	end
 
