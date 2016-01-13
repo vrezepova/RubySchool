@@ -159,18 +159,56 @@
 # end
 
 
-print "Enter the amount to save monthly: "
-	x = gets.to_f
-print "For how many years do you plan to save money? "
-	year = gets.to_i
+# print "Enter the amount to save monthly: "
+# 	x = gets.to_f
+# print "For how many years do you plan to save money? "
+# 	year = gets.to_i
 
-	s = 0
-	1.upto(year) do |mm|
+# 	s = 0
+# 	1.upto(year) do |mm|
 		
-		1.upto(12) do |m|
-			s = s+x
-		puts "Savings for Year #{mm} month #{m}: #{s} "
+# 		1.upto(12) do |m|
+# 			s = s+x
+# 		puts "Savings for the Year #{mm},  month #{m}: #{s} "
 	
-	end
-	end
+# 	end
+# 	end
 
+
+
+# print "Are you happy with your salary? (Y/N) "
+# answer = gets.strip.capitalize
+
+# if answer == "Y"
+# puts "Great :) !"
+# end
+# if answer == "N"
+# puts "Sorry for you :( .."
+# # else puts "The input is not recognized... "
+# end
+
+# print "Press Enter to Play..."
+# gets
+
+# x = rand(1..10)
+
+# if x == 7
+# 	puts "You are the winner!!!"
+# end
+
+#The Lottery Game
+
+print "How many times are you going to play? "
+y = gets.to_i
+
+print "Press Enter to start the Game.."
+gets
+
+1.upto(y) do |i|
+x = rand(1..50)
+y = rand(1..50)
+if x == y
+	puts "Attemp N " + i.to_s + " Wow! :) You are the winner!!! " + x.to_s + " is the winning number!"
+else puts "Attemp N " + i.to_s + " :( ..It is not your happy day.."
+end
+end
