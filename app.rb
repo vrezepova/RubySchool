@@ -125,8 +125,36 @@
 	# 	puts "Savings for #{mm} month( s) : #{s}"
 	# end
 
-10.times do 
-	x=rand 10
-	puts x
+# 10.times do 
+# 	x=rand 10
+# 	puts x
+# end
+
+# puts rand(0.03..0.09)
+
+
+# 1000.times do
+# 	print "Victoria"
+# 	sleep rand(0.05..0.1)
+
+# end
+
+
+100.times do
+	print rand(20..130).chr
+	sleep rand(0.01..0.03)
+end
+
+
+print "Enter you last name: "
+name = gets.chomp!
+
+10.times   do
+	name.size.times do |x|
+		print name[x]
+		sleep rand(0.05..0.09)
+		print "-"
+	end
+	print "  "
 end
 
