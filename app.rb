@@ -198,17 +198,205 @@
 
 #The Lottery Game
 
-print "How many times are you going to play? "
-y = gets.to_i
+# print "How many times are you going to play? "
+# y = gets.to_i
 
-print "Press Enter to start the Game.."
-gets
+# print "Press Enter to start the Game.."
+# gets
 
-1.upto(y) do |i|
-x = rand(1..50)
-y = rand(1..50)
-if x == y
-	puts "Attemp N " + i.to_s + " Wow! :) You are the winner!!! " + x.to_s + " is the winning number!"
-else puts "Attemp N " + i.to_s + " :( ..It is not your happy day.."
+# 1.upto(y) do |i|
+# x = rand(1..50)
+# y = rand(1..50)
+# if x == y
+# 	puts "Attempt N " + i.to_s + " Wow! :) You are the winner!!! " + x.to_s + " is the winning number!"
+# else puts "Attempt N " + i.to_s + " :( ..It is not your happy day.."
+# end
+# end
+
+
+#The Lottery Game #2 - Favorite number
+
+# print "How many times are you going to play? "
+# y = gets.to_i
+
+# print "Enter your favorite number from 1 to 50: "
+# fav = gets.to_i
+
+# print "Press Enter to start the Game.."
+# gets
+
+# 1.upto(y) do |i|
+# x = rand(1..50)
+# if x == fav
+# 	puts "Attempt N #{i} Wow! :) You are the winner!!! " + x.to_s + " has won!"
+# else puts "Attempt N #{i} :( ..It is not your happy day.."
+# end
+# end
+
+
+
+# print "How many guests are going to come? "
+# n = gets.to_i
+
+# if n !=0
+# 	puts "#{n} people!!! Great! The party is coming..."
+# end
+
+# print "How many guests are going to come? "
+# n = gets.to_i
+
+# if n !=0
+# 	puts "#{n} people!!! Great! The party is coming..."
+# end
+# if n == 1
+# 	puts "Придет один гость"
+# end
+# if n == 2
+# 	puts "Придут двое"
+# end
+
+# print "How many guests are going to come? "
+# n = gets.to_i
+
+# 
+# if n <= 0
+# puts "Error!"
+# exit
+# end
+# if n >= 100
+# puts "No!!!!!!!!"
+# exit
+# end
+# if n !=0
+# 	puts "#{n} people!!! Great! The party is coming..."
+# end
+# if n == 1
+# 	puts "Придет один гость"
+# end
+# if n == 2
+# 	puts "Придут двое"
+# end
+# if n >= 3
+# 	puts "Будет много гостей"
+# end
+
+#The Lottery Game #3 - PowerBall
+
+# print "Lets start the Game!"
+# gets
+# print "Enter your 1 number from 1 to 69: "
+# fav1 = gets.to_i
+# print "Enter your 2 number from 1 to 69: "
+# fav2 = gets.to_i
+# print "Enter your 3 number from 1 to 69: "
+# fav3 = gets.to_i
+# print "Enter your 4 number from 1 to 69: "
+# fav4 = gets.to_i
+# print "Enter your 5 number from 1 to 69: "
+# fav5 = gets.to_i
+
+# print "Enter your PowerBall number from 1 to 20: "
+# pb = gets.to_i
+
+# print "Press Enter to continue.."
+# gets
+
+# 1.times do |i|
+# x = rand(1..69)
+# if x == fav1
+# 	 puts ":) You are the winner!!! " + x.to_s + " has won!"
+# else puts ":( ..It is not your happy day.."
+# end
+# if x == fav2
+# 	 puts ":) You are the winner!!! " + x.to_s + " has won!"
+# else puts ":( ..It is not your happy day.."
+# end
+# if x == fav3
+# 	 puts ":) You are the winner!!! " + x.to_s + " has won!"
+# else puts ":( ..It is not your happy day.."
+# end
+# if x == fav4
+# 	 puts ":) You are the winner!!! " + x.to_s + " has won!"
+# else puts ":( ..It is not your happy day.."
+# end
+# if x == fav5
+# 	 puts ":) You are the winner!!! " + x.to_s + " has won!"
+# else puts ":( ..It is not your happy day.."
+# end
+
+
+
+#Slot Machine
+
+print "How old are you? "
+age = gets.to_i
+print "Do you want to play?  (Y/N) ...  "
+response = gets.strip.capitalize
+
+if age >= 18 && response == "Y"
+print "Lets play!\n"
+# else print "You are not eligible to play\n"
+	print "How many rounds you want to play? "
+
+	rounds = gets.to_i
+	print "Please enter your bet ... "
+	
+	money = gets.to_i
+    # money = 1
+
+	puts "Press Enter to start the Game. Your initial money balance is #{money}. "
+	gets
+
+	1.upto(rounds) do |i|
+	
+x = rand(0..9)
+y = rand(0..9)
+z = rand(0..9)
+	if x == 0 && y == 0 && y == 0
+		puts "Your balance is 0. You've lost all your money :( "
+		money = 0
+end
+if x == 1 && y == 1 && y == 1
+		puts "You won $10!"
+		money = money + 10
+end
+if x == 2 && y == 2 && y == 2
+		puts "You won $20!"
+		money = money + 20
+end
+if x == 3 && y == 3 && y == 3
+		puts "You won $30!"
+		money = money + 30
+end
+if x == 4 && y == 4 && y == 4
+		puts "You won $40!"
+		money = money + 40
+end
+if x == 5 && y == 5 && y == 5
+		puts "You won $50!"
+		money = money + 50
+end
+if x == 6 && y == 6 && y == 6
+		puts "You won $60!"
+		money = money + 60
+end
+if x == 7 && y == 7 && y == 7
+		puts "You won $70!"
+		money = money + 70
+end
+if x == 8 && y == 8 && y == 8
+		puts "You won $80!"
+		money = money + 80
+end
+if x == 9 && y == 9 && y == 9
+		puts "You won $90!"
+		money = money + 90
+end
+
+
+puts "Round #{i}: your balance is $#{money}"
 end
 end
+
+
+
