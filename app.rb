@@ -339,9 +339,10 @@ print "Lets play!\n"
 	print "How many rounds you want to play? "
 
 	rounds = gets.to_i
-	print "Please enter your bet ... "
+	print "Please enter your bet ($20 minimum) ... "
 	
 	money = gets.to_i
+	if money >= 20
     # money = 1
 
 	puts "Press Enter to start the Game. Your initial money balance is #{money}. "
@@ -352,6 +353,7 @@ print "Lets play!\n"
 x = rand(0..9)
 y = rand(0..9)
 z = rand(0..9)
+
 
 if x == 0 && y == 0 && y == 0
 		puts "000. Bummer.. You've lost all your money :( "
@@ -419,7 +421,13 @@ if x == 5 && y == 4 && y == 3
 end
 puts "Round #{i}: you got #{x} #{y} #{z}. Your balance is $#{money}"
 end
+
+     puts "Your final Balance is #{money}"
+else puts "Initial bet is $20 minimum! Game over..."
 end
+end
+
+
 
 
 
