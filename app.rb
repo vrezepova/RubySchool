@@ -352,8 +352,9 @@ print "Lets play!\n"
 x = rand(0..9)
 y = rand(0..9)
 z = rand(0..9)
-	if x == 0 && y == 0 && y == 0
-		puts "Your balance is 0. You've lost all your money :( "
+
+if x == 0 && y == 0 && y == 0
+		puts "000. Bummer.. You've lost all your money :( "
 		money = 0
 end
 if x == 1 && y == 1 && y == 1
@@ -362,7 +363,7 @@ if x == 1 && y == 1 && y == 1
 end
 if x == 2 && y == 2 && y == 2
 		puts "You won $20!"
-		money = money + 20
+		money = money + 20 
 end
 if x == 3 && y == 3 && y == 3
 		puts "You won $30!"
@@ -392,9 +393,31 @@ if x == 9 && y == 9 && y == 9
 		puts "You won $90!"
 		money = money + 90
 end
-
-
-puts "Round #{i}: your balance is $#{money}"
+if x == 1 && y == 2 && y == 3
+		puts "You balance is tripled!!!"
+		money = money*3
+end
+if x == 9 && y == 8 && y == 7
+		puts "You balance has lost its half :( "
+		money = money/2
+end
+if x == 8 && y == 7 && y == 6
+		puts "You balance has lost its half :( "
+		money = money/2
+end
+if x == 7 && y == 6 && y == 5
+		puts "You balance has lost its half :( "
+		money = money/2
+end
+if x == 6 && y == 5 && y == 4
+		puts "You balance has lost its half :( "
+		money = money/2
+end
+if x == 5 && y == 4 && y == 3
+		puts "You balance has lost its half :( "
+		money = money/2
+end
+puts "Round #{i}: you got #{x} #{y} #{z}. Your balance is $#{money}"
 end
 end
 
