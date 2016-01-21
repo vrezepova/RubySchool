@@ -27,3 +27,6 @@ puts "====================="
 ('cde'..'bbb').each {|x| puts x}
 ('10cde'..'20bbb').each {|x| puts x}
 ('лилИСлсв'..'флмиылюм').each {|x| puts x}
+
+
+"Privet".reverse
