@@ -138,13 +138,13 @@ end
 arr = [:rock, :scissors, :paper]
 comp = arr[rand(0..2)]
 
-if user1 = comp
+if user1 == comp
 	puts "50/50!"
 end 
-if user2 = comp
+if user2 == comp
 	puts "50/50!"
 end 
-if user3 = comp
+if user3 == comp
 	puts "50/50!"
 end 	
  
