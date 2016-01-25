@@ -430,4 +430,34 @@ end
 
 
 
+# how to change tha value of two variables - works for all types of data
+
+a = 50
+b = 20
+puts  "a = #{a}"
+puts  "b = #{b}"
+
+a, b = b, a
+
+puts  "a = #{a}"
+puts  "b = #{b}"
+puts "=============="
+
+#  #2 how to change tha value of two variables - works for integers only
+
+a = 50
+b = 20
+
+puts  "a = #{a}"
+puts  "b = #{b}"
+
+a = a + b
+b = a - b
+a = a - b
+
+puts  "a = #{a}"
+puts  "b = #{b}"
+
+
+
 
