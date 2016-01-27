@@ -100,7 +100,7 @@
 # 	party2 = []
 # print "Who is ready to be added to the party list? "
 # name = gets.strip.capitalize!
-# if name == " "
+# if name == ""
 # 	break
 # end
 # print "Enter your age: "
@@ -119,36 +119,16 @@
 
 
 
-#TBD
+mates = %w[walt hank jr jessie lidia]
+while 2+2 == 4
 
-print "Enter your choice (rock R, paper P , scissors S) "
-you = gets.strip.capitalize
-
-if you == "R"
-	user1 = :rock
-elsif you == "S"
-	user2 = :scissors
-elsif you == "P"
-	user3 = :paper
-else puts "Try again.. sorry"
-	exit
+mates.each_with_index do |name, index|
+	puts "#{index+1}. #{name}"
 end
-		
-		
-arr = [:rock, :scissors, :paper]
-comp = arr[rand(0..2)]
+print "Who is ready to go? (enter #) .. "
+q = gets.to_i
+mates.delete_at q-1
+end
 
-if user1 == comp
-	puts "50/50!"
-end 
-if user2 == comp
-	puts "50/50!"
-end 
-if user3 == comp
-	puts "50/50!"
-end 	
- 
-
-puts comp
 
 
