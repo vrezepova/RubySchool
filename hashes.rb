@@ -22,6 +22,39 @@
 # options1['Walt'] = '433701847'
 # puts hh
 
+# call element: puts hh['Mike']
+
+
+#hh.keys
+#hh.values
+ # .each do |key, value|
+ # . each_value do |value|
+ # . each_key do |key|
+
+ # hh.has_key? 'cat' -> true or false
+ # 
+ # hh.has_value? 'пес' -> true or false
+
+
+# Check if the key exists
+dict = {'dog' => ['собака', 'пес', 'преследовать', 'поводок'], 'cat' => ['кошка', 'кот', 'гусеничный трактор', 'животное семейства кошачьих'], 'girl' => ['девушка', 'девочка'], 'boy' => ['мальчик', 'парень'], 'finger'=> ['палец']}
+
+if dict.has_key? 'cat'
+	puts 'There is the word "cat" in the dictionary!'
+end
+
+if dict['cat']
+		puts 'There is the word "cat" in the dictionary!!'
+end
+
+if dict.value? 'собака'
+	puts 'There is the word translation "собака" in the dictionary!'
+end
+
+if dict['собака']
+		puts 'There is the word translation "собака" in the dictionary!!'
+end
+
 #Simple Phonebook
 
 book = {}
@@ -43,6 +76,10 @@ book[name] = phone
 puts book
 
 end
+
+
+
+
 
 
 

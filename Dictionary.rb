@@ -19,7 +19,11 @@ dict = {'dog' => ['собака', 'пес', 'преследовать', 'пов�
 loop do 
 print "Enter word: "
 word = gets.strip
-
+if word == ""
+	puts "Exit the application..."
+	sleep 5
+	break
+end
 arr = dict[word]
 puts "Количество переводов: #{arr.size} "
 
