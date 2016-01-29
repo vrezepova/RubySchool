@@ -459,5 +459,19 @@ puts  "a = #{a}"
 puts  "b = #{b}"
 
 
+# #infinite loops
 
+# #1
+# while true
+
+# 	end
+
+
+# #2
+
+# loop do
+# end
+
+# #exit loop
+# break
 

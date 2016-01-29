@@ -4,13 +4,45 @@
 # for example, phone book structure, name and phone number, birthday, address, etc
 # array = []
 # hash = {} 
+# arr = Array.new
+# hh = Hash.new
 # hh = {"Mike" => "3537334", "Jessie" => "9248975"}
 # where Mike - Key, 3537334 - value; may contain any objects. Each value has a key.
 # => hash rocket
 
- # adding data:
+ # adding data, to initialize hash:
  # hh ['Mike'] = 54
- 
+ # adding more data
+ # OR
+ # hh.store('Zoe', 25)
+
+ # Hash output:
+
+ # puts hh
+ # OR
+ # puts hh.inspect
+ # OR
+ # hh.each do |k, v|
+ # puts "#{k} ..... #{v}"
+ # end
+
+ # all the keys: puts hh.keys -> =array
+ # OR hh.keys.inspect
+ # hh.keys.each do |key|
+ # value = hh[key]
+ # end
+
+ # clear hash : hh.clear
+# Verification
+ # if hh.has_key? 'Mike' OR hh.key? 'Mike'
+ # 	puts hh['Mike']
+ # end
+
+ # delete 1 : hh.delete 'Mike'
+
+ # if hh['Mike']
+ # puts hh['Mike']
+ # end
 
 #  option = {:font_size => 10, :font_family => 'Arial'}
 #  x = option{:font_size}
@@ -47,7 +79,7 @@ if dict['cat']
 		puts 'There is the word "cat" in the dictionary!!'
 end
 
-if dict.value? 'собака'
+if dict.value? 'собака' #won/t work - the value should be exact as in the hash. the current vakue is array
 	puts 'There is the word translation "собака" in the dictionary!'
 end
 

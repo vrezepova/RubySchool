@@ -31,3 +31,5 @@ puts "Перевод:"
 puts  arr
 
 end
+
+

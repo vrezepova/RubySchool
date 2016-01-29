@@ -56,3 +56,11 @@ return "left" #or expression 2+2. "return "is better to be avoided. returm is al
 	puts "Got the command: #{command}"
 
 
+def say_hi name, age
+	year = 2015-age.to_i
+	puts "Hi #{name}, born in #{year}!"
+end
+
+say_hi 'Mike', 65
+
+
